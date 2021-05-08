@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
-import Forbidden from "../forbiden/Forbiden";
-import AuthLayout from "../../components/layout/AuthLayout";
-import BasicLayout from '../../components/layout/BasicLayout';
+import Forbidden from "../pages/forbiden/Forbiden";
+import AuthLayout from "../components/layout/AuthLayout";
+import BasicLayout from '../components/layout/BasicLayout';
 
 
 const PrivateRoute = ({component: Component, isPrivate, ...rest}) => {

@@ -13,8 +13,8 @@ const NavbarTop = () => {
             <Nav className="mr-auto">
                 <Nav.Link><Link to="/home">Home</Link></Nav.Link>
                 <Nav.Link><Link to="/movies">Movies</Link></Nav.Link>
-                <Nav.Link><Link to="/books">Books</Link></Nav.Link>
-                <Nav.Link><Link to="/people">People</Link></Nav.Link>
+                {/* <Nav.Link><Link to="/books">Books</Link></Nav.Link>
+                <Nav.Link><Link to="/people">People</Link></Nav.Link> */}
                 
                 <Nav.Link onClick={() => {
                     localStorage.clear();
