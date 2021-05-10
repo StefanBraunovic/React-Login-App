@@ -5,8 +5,17 @@ import Form from './components/Form'
 import movies from '../../constants/movies';
 import MoviesData from '../../components/contexts/MoviesData'
 
-const changeMovies = ()=>{
+const changeMovies = (state, action) => {
+    switch(action.type){
+       
+        case 'add':
+            const newId = movies.length;
 
+            return movies.push({id: newId, title: action.data.title, year: action.data.year})
+ 
+        default:
+            return ;
+    }
 }
 
 const Movies = ()=>{
@@ -14,11 +23,12 @@ const Movies = ()=>{
     const [moviesLIst, dispatch] = useReducer(changeMovies,movies)
 
     
-    return <MoviesData.Provider value={{list:moviesLIst}}>
+    return <MoviesData.Provider value={{
+        list:moviesLIst,
+        dispatch:(e)=>dispatch(e)}}>
     
     <div>
         <div>
-        <button  onClick={()=>setIsGridInView(false)}>Add movie</button>
         </div>
 
         <div>
@@ -29,6 +39,7 @@ const Movies = ()=>{
                 :
                 <Form/>
             }
+            <button  onClick={()=>setIsGridInView(false)}>Add movie</button>
            
           
         </div>

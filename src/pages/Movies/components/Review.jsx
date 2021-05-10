@@ -2,16 +2,15 @@ import React from 'react';
 import { useContext } from 'react';
 
 import MoviesData from '../../../components/contexts/MoviesData';
-import TableComponent from '../../../components/table/Table';
+import Table from '../../../components/table/Table';
 
 
 const Review = ()=>{
     const {list} =useContext(MoviesData)
-
-    const header = ['id', 'Naslov', 'Godina'];
+    const header = ['id', 'Naslov', 'Godina', 'Delete'];
 
     return <div>
-       <TableComponent header={header} rows={list}/>
+       <Table header={header} rows={list}/>
     </div>
 }
 

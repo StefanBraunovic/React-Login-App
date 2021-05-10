@@ -1,13 +1,12 @@
-import React from 'react';
+// import React, {useState} from 'react';
 
 import Table from 'react-bootstrap/Table'
 
-//header = [ 'title 1', 'title 2', ... ]
-// rows = [
-//  { value, value2}
-// ]
+
 
 const TableComponent = ({header, rows}) => {
+     
+  
     return <Table striped bordered hover variant="dark">
         <thead>
                 <tr>
@@ -25,6 +24,7 @@ const TableComponent = ({header, rows}) => {
                 console.log((Object.values(row)));
                 return <tr key={row?.id}>
                     {Object.values(row).map((item, index) =>  <td key={index}>{item}</td>)}
+                        {/* <td><button onClick={() => handleRemove(row?.id)}>Delete</button></td> */}
                             </tr>
             })
         }

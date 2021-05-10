@@ -2,9 +2,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch } from 'react-router-dom';
 import Login from '././pages/Login/Login';
-import PrivateRoute from './privateRoute/PrivateRoute';
-import Home from './pages/home/Home';
-import Movies from './pages/movies/Movies';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Home from './pages/Home/Home';
+import Movies from './pages/Movies/Movies';
 
 function App() {
 	return (
