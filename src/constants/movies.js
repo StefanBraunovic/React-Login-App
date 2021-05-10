@@ -1,4 +1,4 @@
-const movies = [
+export const Movies = [
 	{
 		id: 1,
 		title: 'The Shawshank Redemption',
@@ -31,4 +31,4 @@ const movies = [
 	},
 ];
 
-export default movies;
+

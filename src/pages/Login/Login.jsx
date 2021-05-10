@@ -14,7 +14,7 @@ const Login = ()=>{
   }
 
     return <div>
-  <Container >
+  <Container className="danger">
     <Row  className="justify-content-md-center">
         <Col xs="auto" >
           <Form>
@@ -31,9 +31,9 @@ const Login = ()=>{
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
               <Form.Group controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
+              
               </Form.Group>
-              <Button variant="primary" type="submit" onClick={() => onLogin()}>
+              <Button variant="primary" type="submit" style={{marginTop:"10px"}}  onClick={() => onLogin()}>
                 Submit
               </Button>
           </Form>

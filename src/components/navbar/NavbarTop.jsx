@@ -7,11 +7,11 @@ const NavbarTop = () => {
     const history = useHistory();
 
     return <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">Route-App</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link><Link to="/home">Home</Link></Nav.Link>
+                     <Nav.Link><Link to="/home">Home</Link></Nav.Link>
                 <Nav.Link><Link to="/movies">Movies</Link></Nav.Link>
                 {/* <Nav.Link><Link to="/books">Books</Link></Nav.Link>
                 <Nav.Link><Link to="/people">People</Link></Nav.Link> */}
@@ -20,6 +20,9 @@ const NavbarTop = () => {
                     localStorage.clear();
                     history.push("/login");
                 }}>Log out</Nav.Link>
+          
+
+           
             </Nav>
         </Navbar.Collapse>
     </Navbar>
