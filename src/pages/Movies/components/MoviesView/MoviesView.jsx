@@ -13,7 +13,7 @@ import NavbarTop from '../../../../components/navbar/NavbarTop';
 export default function MoviesPage({ movies, setMovies }) {
   const history = useHistory();
 
-  const onAddNewMovieButonHandler = () => {
+  const onAddNewBtn = () => {
     history.push('/movies/new');
   };
 
@@ -33,7 +33,7 @@ export default function MoviesPage({ movies, setMovies }) {
       <Container>
       <NavbarTop/>
       <Button
-          onClick={onAddNewMovieButonHandler}
+          onClick={onAddNewBtn}
           variant="success"
           style={{
             position: 'absolute',

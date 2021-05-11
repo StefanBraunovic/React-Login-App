@@ -43,23 +43,23 @@ export default function NewMovieForm({ movies, setMovies }) {
           <Col md={4} className="text-center">
             <div className="form-fields-container pe-5 ps-5">
               <Form.Group className="mb-4" controlId="movieName">
-                <Form.Label>Naziv filma</Form.Label>
+                <Form.Label>Movie Title</Form.Label>
                 <Form.Control
                   type="text"
                   value={movieTitle}
-                  placeholder="Unesite ime filma..."
+                  placeholder="title"
                   onChange={(e) => setMovieTitle(e.target.value)}
                 />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="movieYear">
-                <Form.Label>Godina izdavanja</Form.Label>
+                <Form.Label>Release year</Form.Label>
                 <Form.Control
                   type="number"
-                  from={1900}
-                  to={2021}
+              
+                
                   value={movieYear}
-                  placeholder="Unesite godinu izdavanja..."
+                  placeholder="release year"
                   onChange={(e) => setMovieYear(e.target.value)}
                 />
               </Form.Group>
